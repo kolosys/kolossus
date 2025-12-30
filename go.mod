@@ -14,4 +14,4 @@ require (
 	github.com/kolosys/synapse v0.3.0 // indirect
 )
 
-replace github.com/kolosys/discord => ../discord
+// replace github.com/kolosys/discord => ../discord
