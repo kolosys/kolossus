@@ -1,2 +1,0 @@
-[build]
-  command = "GOOS=linux GOARCH=amd64 go build -o netlify/functions/bot ./internal/"

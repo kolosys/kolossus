@@ -1,8 +1,6 @@
-package main
+package bot
 
 import (
-	"context"
-	"log"
 	"os"
 
 	"github.com/kolosys/discord"
@@ -18,14 +16,4 @@ func NewBot() (*discord.Bot, error) {
 			Enabled: true,
 		},
 	})
-}
-
-func main() {
-	bot, err := NewBot()
-	if err != nil {
-		log.Fatalf("Failed to create bot: %v", err)
-	}
-
-	bot.Start(context.Background())
-	defer bot.Stop(context.Background())
 }
