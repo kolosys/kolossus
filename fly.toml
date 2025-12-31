@@ -1,17 +1,12 @@
-# fly.toml app configuration file generated for kolossus-aged-butterfly-2718 on 2025-12-31T16:01:27-05:00
+# fly.toml app configuration file generated for kolossus on 2025-12-31T21:06:58Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'kolossus-aged-butterfly-2718'
-primary_region = 'dfw'
+app = 'kolossus'
+primary_region = 'iad'
 
 [build]
-  [build.args]
-    GO_VERSION = '1.24.0'
-
-[env]
-  PORT = '8080'
 
 [http_service]
   internal_port = 8080
